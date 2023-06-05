@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Dos-gatos-y-un-raton/
 #11335. Dos gatos y un ratón
 A,B,C=map(int, input().split())
 def conteo(A,B,C):
