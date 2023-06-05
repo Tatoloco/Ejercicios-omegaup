@@ -1,0 +1,20 @@
+#3127. Alicia y su trabajo
+c,a=map(int, input().split())
+b = list(map(int,input().split(' ')))
+def relacion(a,b):
+	return a<=b
+
+def quicksort(lista):
+	if not lista: return []
+	vic=[]
+	per=[]
+	for i in (lista[1:]):
+		if(relacion(lista[0],i)): per.append(i)
+		else: vic.append(i)
+	vic=quicksort(vic)
+	per=quicksort(per)
+	return vic+[lista[0]]+per
+def alicia(a,b):
+	orden=quicksort(b)
+	return orden.index(a)+1
+print(alicia(a,b))
