@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Numeros-Narcisistas/
 #8644. Números Narcisistas
 a=input()
 
