@@ -1,3 +1,5 @@
+https://omegaup.com/arena/problem/El-agua-y-el-aceite/
+#4976. El agua y el aceite
 a=int(input())
 S = list(map(int,input().split(' ')))
 
