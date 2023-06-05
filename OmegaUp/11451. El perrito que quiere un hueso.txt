@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/El-perrito-que-quiere-un-hueso/
 #11451. El perrito que quiere un hueso
 N = list(map(int,input().split(' ')))
 S = list(map(int,input().split(' ')))
