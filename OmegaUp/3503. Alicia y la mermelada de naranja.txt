@@ -1,0 +1,11 @@
+#3503. Alicia y la mermelada de naranja
+C=int(input())
+def merme(I,D):
+	if(I>D): return I
+	return D
+acu=0
+while(C):
+	I,D=map(int, input().split())
+	acu+=merme(I,D)
+	C-=1
+print (acu)
