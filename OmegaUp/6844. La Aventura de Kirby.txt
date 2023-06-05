@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/La-Aventura-de-Kirby/
 #6844. La Aventura de Kirby
 A,B=map(int, input().split())
 S = list(map(int,input().split(' ')))
