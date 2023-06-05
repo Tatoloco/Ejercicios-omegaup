@@ -1,0 +1,12 @@
+#6844. La Aventura de Kirby
+A,B=map(int, input().split())
+S = list(map(int,input().split(' ')))
+
+def kirby(A,B,S)
+	return kirbyaux(A,B,S,0)
+def kirbyaux(A,B,S,conta)
+	if(not A) return 'Poyo ('
+	if(B==S[0]) return conta
+	return kirbyaux(A-1,B,S[1],conta+1)
+
+print(kirby(A,B,S))
