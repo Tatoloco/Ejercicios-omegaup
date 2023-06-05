@@ -1,0 +1,8 @@
+#4244. FizzBuzz
+def fizbu(n):
+	if(n%3==0) and (n%5==0): return'FizzBuzz'
+	if(n%3==0): return 'Fizz'
+	if(n%5==0): return 'Buzz'
+	return n
+for i in range(1,1000+1):
+	print(fizbu(i))
