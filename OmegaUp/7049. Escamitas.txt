@@ -1,0 +1,14 @@
+#7049. Escamitas
+t=int(input())
+
+def tibia(t):
+	if (t<=29 and t>=21 ): return 'tibia'
+	if (t<21): return 'fria!'
+	return 'caliente!'
+
+def muerto(t):
+	if (t<15): return 'RIP escamitas :('
+	if (t>34): return 'RIP escamitas :('
+	return ''
+print (tibia(t))
+print (muerto(t))
