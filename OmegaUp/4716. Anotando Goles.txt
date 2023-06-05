@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Anotando-Goles/
 #4716. Anotando Goles
 n=int(input())
 def gol(n):
