@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Aventando-Chuzas/
 #5304. Aventando Chuzas
 a=7
 def esto(a):
