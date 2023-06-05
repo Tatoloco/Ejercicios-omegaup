@@ -1,0 +1,14 @@
+a=int(input())
+S = list(map(int,input().split(' ')))
+
+def sepa(S):
+  nega=''
+  posi=''
+  for i in S:
+    if(i%2==0):
+      posi+=str(i)+' '
+    if(i%2!=0):
+      nega+=str(i)+' '
+  return posi+nega
+
+print(sepa(S).rstrip())
