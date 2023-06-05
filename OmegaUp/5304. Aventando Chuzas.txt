@@ -1,0 +1,15 @@
+#5304. Aventando Chuzas
+a=7
+def esto(a):
+  res=[]
+  while(a):
+    i=int(input())
+    res.append(i)
+    a-=1
+  return res
+
+def resultado(a):
+  print(sum(a)//7)
+  return max(a)
+
+print(resultado(esto(a)))
