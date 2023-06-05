@@ -1,0 +1,48 @@
+#7126. La moda y sus signos
+import sys
+sys.setrecursionlimit(10000) 
+e=int(input())
+S = list(map(int,input().split(' ')))
+
+def relacion(a,b):
+	return a<=b
+
+def quicksort(Lista):
+	if not Lista: return []
+	vic=[]
+	per=[]
+	for i in (Lista[1:]):
+		if (relacion(abs(Lista[0]),abs(i))):
+			per.append(abs(i))
+		else:
+			vic.append(abs(i))
+	vic=quicksort(vic)
+	per=quicksort(per)
+	return vic+[abs(Lista[0])]+per
+
+def moda(S,a):
+	a.append(1<<30)
+	return moduax(a,1,[0,a[0]],[1,a[0]])
+
+def moduax(a, cont, res, comp):
+    if not a:
+        return comp[1]
+    if a[0] != res[1]:
+        if res[0] > comp[0]:
+            return moduax(a[1:], 1, [1, a[0]], res)
+        return moduax(a[1:], 1, [cont, a[0]], comp)
+    return moduax(a[1:], cont + 1, [cont, a[0]], comp)
+
+def cuenta(e,S):
+	posi=0
+	nega=0
+	a=quicksort(S)
+	modi=moda(S,a)
+	print(modi)
+	for i in S:
+		if i==modi:
+			posi+=1
+		elif abs(i)==modi:
+			nega+=1
+	return str(posi)+' '+str(nega)
+print(cuenta(e,S))
