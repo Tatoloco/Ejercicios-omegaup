@@ -1,0 +1,19 @@
+#8644. Números Narcisistas
+a=input()
+
+def separa(a):
+  res=[]
+  e=len(a)
+  for i in a:
+    prod=1
+    for _ in range(0,e):
+      prod*=int(i)
+    res.append(prod)
+  return sum(res)==int(a)
+
+def respu(a):
+  if a==False:
+    return 'No es Narcisista'
+  return 'Es Narcisista'
+
+print(respu(separa(a)))
