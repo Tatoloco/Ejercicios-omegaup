@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Alicia-y-su-trabajo/
 #3127. Alicia y su trabajo
 c,a=map(int, input().split())
 b = list(map(int,input().split(' ')))
