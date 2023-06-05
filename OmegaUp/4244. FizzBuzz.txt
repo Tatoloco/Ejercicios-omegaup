@@ -1,4 +1,4 @@
-https://omegaup.com/arena/problem/FizzBuzz/#problems/FizzBuzz/show-run:15521ea2aefe782df316a28d081d804e
+https://omegaup.com/arena/problem/FizzBuzz/
 #4244. FizzBuzz
 def fizbu(n):
 	if(n%3==0) and (n%5==0): return'FizzBuzz'
