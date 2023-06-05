@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Sentidos/
 #3778. Sentidos
 N=int(input())
 S=list(map(int,input().split()))
