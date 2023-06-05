@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Escamitas/
 #7049. Escamitas
 t=int(input())
 
