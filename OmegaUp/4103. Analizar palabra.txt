@@ -1,0 +1,19 @@
+#4103. Analizar palabra
+a=input()
+vocales=['a','e','i','o','u','A','E','I','O','U']
+print(len(a))
+
+def cuenta(a):
+	cont=0
+	for letra in a:
+		if(letra in vocales):
+			cont+=1
+	return cont
+print(cuenta(a))
+
+def inverso(a):
+	res=''
+	for letra in a:
+		res=letra+res
+	return res
+print(inverso(a))
