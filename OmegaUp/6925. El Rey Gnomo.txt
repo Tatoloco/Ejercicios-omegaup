@@ -1,0 +1,16 @@
+#6925. El Rey Gnomo
+a=int(input())
+def encontrar(S):
+  orden=S[1]
+  posi=1
+  for i in S[1:]:
+    if i!=orden:
+      return posi
+    orden+=1
+    posi+=1
+  return ''
+
+while a:
+  S = list(map(int,input().split(' ')))
+  print(encontrar(S))
+  a-=1
