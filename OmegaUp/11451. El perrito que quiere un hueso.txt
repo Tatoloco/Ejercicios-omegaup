@@ -1,0 +1,16 @@
+#11451. El perrito que quiere un hueso
+N = list(map(int,input().split(' ')))
+S = list(map(int,input().split(' ')))
+
+def equiaux(N,S):
+	if(N[0]>S[0]): return equiposi(N[1:],S[1:])
+	return equinega(N[1:],S[1:])
+
+def equinega(N,S):
+	if(N[0]>S[0]): return 'Perrito confundido :('
+	return 'Hueso 2'
+def equiposi(N,S):
+	if(N[0]<S[0]): return 'Perrito confundido :('
+	return 'Hueso 1'
+
+print (equiaux(N,S))
