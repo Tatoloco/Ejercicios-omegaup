@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Alex-la-barba-y-las-pizzas/
 2993. Alex, la barba, y las pizzas
 A,B=map(int, input().split())
 S = list(map(int,input().split(' ')))
