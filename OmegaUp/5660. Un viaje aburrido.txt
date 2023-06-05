@@ -1,0 +1,9 @@
+#5660. Un viaje aburrido
+N=int(input())
+reproductor = list(map(int,input().split(' ')))
+def canciones(reproductor):
+	naburri=0
+	for cancion in reproductor:
+		naburri+=cancion
+	return naburri
+print (canciones(reproductor))
