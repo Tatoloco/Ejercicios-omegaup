@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/NumDivisores/
 #5798. Divisores
 import sys
 sys.setrecursionlimit(1000000000)
