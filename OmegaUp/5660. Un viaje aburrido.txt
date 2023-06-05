@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Un-viaje-aburrido/
 #5660. Un viaje aburrido
 N=int(input())
 reproductor = list(map(int,input().split(' ')))
