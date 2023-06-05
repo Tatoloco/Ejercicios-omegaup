@@ -1,0 +1,16 @@
+#4716. Anotando Goles
+n=int(input())
+def gol(n):
+	p=n
+	cont=0
+	c=0
+	b=int(input())
+	while(b):
+		r=int(input())
+		if(p<r): cont+=1
+		if(c<r): c+=-c+r
+		b-=1
+	print(c-n)
+	return cont
+
+print (gol(n))
