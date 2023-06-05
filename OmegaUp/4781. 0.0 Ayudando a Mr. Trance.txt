@@ -1,0 +1,11 @@
+#4781. 0.0 Ayudando a Mr. Trance
+P=str(input())
+S = list(map(str,input().split(' ')))
+
+def repi(P,S):
+	return repiaux(P,S,0)
+def repiaux(P,S,con):
+	if(not S): return con
+	if(P.lower()==S[0]): return repiaux(P,S[1:],con+1)
+	return repiaux(P,S[1:],con)
+print(repi(P,S))
