@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/El-Rey-Gnomo/
 #6925. El Rey Gnomo
 a=int(input())
 def encontrar(S):
