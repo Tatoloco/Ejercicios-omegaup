@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Alicia-y-la-mermelada-de-naranja/
 #3503. Alicia y la mermelada de naranja
 C=int(input())
 def merme(I,D):
