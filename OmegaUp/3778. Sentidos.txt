@@ -1,0 +1,10 @@
+#3778. Sentidos
+N=int(input())
+S=list(map(int,input().split()))
+def calleaux(N,S,U,D):
+	if(not N): return str(U)+' '+str(D)
+	if(S[0]==1): return calleaux(N-1,S[1:],U+1,D)
+	return calleaux(N-1,S[1:],U,D+1)
+def calle(N,S):
+	return calleaux(N,S,0,0)
+print (calle(N,S))
