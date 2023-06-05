@@ -1,0 +1,11 @@
+2993. Alex, la barba, y las pizzas
+A,B=map(int, input().split())
+S = list(map(int,input().split(' ')))
+
+def pizza (A,B,S):
+	return pizzaux(A,B,S,0)
+def pizzaux(A,B,S,ACU):
+	if (not A): return ACU
+	return pizzaux(A-1,B,S[1:],ACU+S[0]*B)
+
+print(pizza(A,B,S))
