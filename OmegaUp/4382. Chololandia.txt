@@ -1,0 +1,10 @@
+A,K=map(int, input().split())
+
+def pago(A,K):
+	c=0
+	while(A):
+		b=int(input())
+		if(b-K<0): c+=1
+		A-=1
+	return c
+print (pago(A,K))
