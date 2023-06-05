@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/La-moda-y-sus-signos/
 #7126. La moda y sus signos
 import sys
 sys.setrecursionlimit(10000) 
