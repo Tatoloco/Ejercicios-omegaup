@@ -1,0 +1,13 @@
+#5798. Divisores
+import sys
+sys.setrecursionlimit(1000000000)
+
+a=int(input())
+def respu(a):
+  return cantDivisores(a,1)
+def cantDivisores(n,i):
+	if (i*i>n): return 0
+	if (i*i == n): return 1
+	if (n%i == 0): return 2+cantDivisores(n,i+1)
+	return cantDivisores(n,i+1)
+print(respu(a))
