@@ -1,0 +1,20 @@
+#11335. Dos gatos y un ratón
+A,B,C=map(int, input().split())
+def conteo(A,B,C):
+	if(gatoA(A,C)>gatoB(B,C)): return 'gato B'
+	if(gatoA(A,C)<gatoB(B,C)): return 'gato A'
+	return 'raton C'
+	
+def gatoA(A,C):
+	return gatoAux(A,C,0)
+def gatoAux(A,C,ACU):
+	if(A==C): return ACU
+	if(A<C): return gatoAux(A+1,C,ACU+1)
+	return gatoAux(A-1,C,ACU+1)
+def gatoB(B,C):
+	return gatoBux(B,C,0)
+def gatoBux(B,C,ACU):
+	if(B==C): return ACU
+	if(B<C): return gatoBux(B+1,C,ACU+1)
+	return gatoAux(B-1,C,ACU+1)
+print(conteo(A,B,C))
