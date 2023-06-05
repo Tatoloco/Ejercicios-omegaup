@@ -1,3 +1,4 @@
+https://omegaup.com/arena/problem/Calculando-el-logaritmo-base-2/
 #5636. Calculando el logaritmo base 2
 a=int(input())
 def loga(a):
